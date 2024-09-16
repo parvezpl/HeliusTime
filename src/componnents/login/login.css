@@ -1,0 +1,77 @@
+.maincontainer {
+    display: flex;
+    position: absolute;
+    top: 16%;
+    min-width: -webkit-fill-available;
+    justify-content: center;
+
+}
+
+
+.login-box {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 939px;
+    height: 682px;
+    box-shadow: -1px 1px 19px 39px rgba(191, 191, 191, 0.25);
+    background: #373737;
+    border-radius: 33px;
+}
+
+
+.inleftbox {
+    width: 337px;
+    height: 507px;
+    box-shadow: 0px 0px 29px 3px #373737;
+    background: url("./../../assets/login.jfif");
+
+}
+
+.inrightbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 533px;
+    height: 464px;
+    gap: 52px;
+    /* background-color: red; */
+}
+
+.inrightbox Inputbox {
+    /* margin: 10px; */
+}
+
+.inputBox-acount-text {
+    display: flex;
+    gap: 56px;
+
+}
+
+p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    margin: 10px;
+}
+
+.login-cencel {
+    display: flex;
+    position: absolute;
+    font-size: 42px;
+    color: red;
+    margin-left: 54rem;
+    height: 73px;
+    width: 73px;
+    border-radius: 45px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-color: white;
+    box-shadow: 0px 1px 32px #FFFBD7;
+
+}
+

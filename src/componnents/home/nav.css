@@ -1,0 +1,76 @@
+.navi {
+    display: flex;
+    position: fixed;
+    min-width: -webkit-fill-available;
+    top: 0;
+    left: 0;
+    border: 1px solid #000;
+    max-width: 1440px;
+    background-color: #373737;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+
+.navi-name {
+    display: flex;
+    flex: 1;
+}
+
+.navi-name span {
+    flex: 1;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 42px;
+    color: #3cce4a;
+    text-shadow: 6px 7px 6px 0 rgba(169, 169, 169, 0.25);
+}
+
+.navi-end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 3 3;
+}
+
+.navi-option {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    /* justify-content: space-between; */
+    /* flex-grow: inherit; */
+    /* margin-inline: 4px; */
+    /* width: 552px; */
+    height: 45px;
+    padding: 20px;
+    flex: 0 1 650px;
+}
+
+.navi-option li {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    flex:1 1 100px;
+}
+
+.navi-login {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    color: #3cce4a;
+    margin-left: 20px;
+}
+
+.navi-login :hover {
+    color: #b5d70a;
+    cursor: pointer;
+}
+
+/* ============================center box=====================================*/
+
+.center {
+    /* width: 1440px;
+height: 916px; */
+    background-color: red;
+}
