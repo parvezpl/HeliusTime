@@ -1,6 +1,7 @@
 import React from 'react'
 import { Inputbox, LoginButton } from './inputbox/inputbox'
 import "./login.css"
+import loginphoto from './../../assets/login.jfif'
 export function Login({ onLoginClick }) {
     
     const handleSubmit =(event)=>{
@@ -11,9 +12,12 @@ export function Login({ onLoginClick }) {
     }
     return (
         <div className='maincontainer'>
-            <div className='login-cencel' onClick={() => onLoginClick(false)}>X</div>
             <div className='login-box'>
-                <div className='inleftbox'></div>
+            <div className='login-cencel' onClick={() => onLoginClick(false)}>X</div>
+
+                <div className='inleftbox'>
+                    <img src={loginphoto}></img>
+                </div>
                 <div className='inrightbox'>
                     <form
                     onSubmit={handleSubmit}
@@ -30,6 +34,7 @@ export function Login({ onLoginClick }) {
                             placeholder="login"
                         />
                     </form>
+                    <div className='login-with-google'> <button>login with google</button></div>
                     <div className='inputBox-acount-text'>
                         <p>Create Account</p>
                         <p>Forget Password</p>

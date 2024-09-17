@@ -10,12 +10,14 @@
 
 .login-box {
     display: flex;
+    flex: 0 1 939px;
+    margin-inline: 33px;
+    position: relative;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    width: 939px;
     height: 682px;
-    box-shadow: -1px 1px 19px 39px rgba(191, 191, 191, 0.25);
+    box-shadow: -1px 1px 19px 12px rgba(191, 191, 191, 0.25);
     background: #373737;
     border-radius: 33px;
 }
@@ -25,9 +27,18 @@
     width: 337px;
     height: 507px;
     box-shadow: 0px 0px 29px 3px #373737;
-    background: url("./../../assets/login.jfif");
+    margin-left: 7px;
+    /* background: url("./../../assets/login.jfif"); */
 
 }
+
+.inleftbox img {
+    width: inherit;
+    height: inherit;
+}
+
+
+
 
 .inrightbox {
     display: flex;
@@ -48,14 +59,15 @@
     display: flex;
     gap: 56px;
 
+
 }
 
 p {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 22px;
-    color: #fff;
-    margin: 10px;
+    font-size: 24px;
+    color: #FFF;
+    margin: -10px;
 }
 
 .login-cencel {
@@ -71,7 +83,26 @@ p {
     align-items: center;
     cursor: pointer;
     border-color: white;
-    box-shadow: 0px 1px 32px #FFFBD7;
+    box-shadow: 0px 0px 4px #FFFBD7;
+    top: 0;
+    right: 0;
 
 }
 
+.login-with-google {
+
+    display: flex;
+    width: 396px;
+    font-size: 13px;
+    border: groove;
+    border-color: #c0c0f2;
+    height: 60px;
+}
+
+.login-with-google button {
+    font-weight: 700;
+    /* display: flex; */
+    flex: 1;
+    font-size: 25px;
+    color: #0003ac;
+}
