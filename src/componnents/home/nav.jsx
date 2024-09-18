@@ -1,12 +1,12 @@
 import React from 'react'
 import "./nav.css"
 import CenterBox from './center_box';
-export function Nav({onLoginClick}) {
+import { useDispatch } from 'react-redux';
+import { loginFunc } from '../../reduxx/slices';
+import { Link } from 'react-router-dom';
 
-    const loginbtn =()=>{
-        console.log("cleick")
-        onLoginClick(true)
-    }
+export function Nav({onLoginClick}) {
+    const dispatch =useDispatch()
 
     return (
         <>
@@ -20,10 +20,11 @@ export function Nav({onLoginClick}) {
                         <li>blog</li>
                         <li>contact</li>
                     </ul>
-                    <div className='navi-login'
-                    onClick={()=>loginbtn()}
+                    <Link to={"/login"}
+                    className='navi-login'
+                    onClick={()=>dispatch(loginFunc(true))}
                     ><span >Login</span>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </>

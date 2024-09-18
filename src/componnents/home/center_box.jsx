@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import './centerbox.css'
 import homeimg from './../../assets/home.jpg'
 import { Login } from '../login/login'
-export default function CenterBox({onLoginClick, isLoginVigible}) {
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+export default function CenterBox({onLoginClick}) {
     // const [isLoginVigible, setIsLoginVisible] = useState(false)
-
+    const isLoginVigible = useSelector((state)=>state.account.loginStatus)
     return (
         <>
             <div className='main-page-box'>
@@ -17,8 +19,10 @@ export default function CenterBox({onLoginClick, isLoginVigible}) {
                                 <span className='textbox3'>hi, i am full stack web developor fresher, i am know frotend and backend very well, i am using react.js for frotend and node.js for backend base on javacript.</span>
                             </div>
                             <div className='buttonbox'>
-                                <button>View Work</button>
-                                <button>hire me</button>
+                                <div className='link-button'>
+                                <Link to={"/myworks"}>View Work</Link>
+                                </div>
+                                <button className='link-button'>hire me</button>
                                 {/* <div className='view_work'></div>
                             <div className='hire_me'></div> */}
                             </div>
@@ -29,9 +33,9 @@ export default function CenterBox({onLoginClick, isLoginVigible}) {
                     </div>
                 </div>
             </div>
-            {isLoginVigible && <Login
+            {/* {isLoginVigible && <Login
             onLoginClick ={onLoginClick}
-            />}
+            />} */}
         </>
     )
 }
