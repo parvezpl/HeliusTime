@@ -11,8 +11,8 @@ export default function CenterBox({onLoginClick}) {
         <>
             <div className='main-page-box'>
                 <div className='centerBox2'>
-                    <div className='main-leftbox'>
-                        <div className='leftbox'>
+                   <div className='main-leftbox'> 
+                      <div className='leftbox'>
                             <div className='textbox'>
                                 <span className='textbox1'>hello!</span>
                                 <span className='textbox2'>I Am Parvez Alam</span>
@@ -23,19 +23,16 @@ export default function CenterBox({onLoginClick}) {
                                 <Link to={"/myworks"}>View Work</Link>
                                 </div>
                                 <button className='link-button'>hire me</button>
-                                {/* <div className='view_work'></div>
-                            <div className='hire_me'></div> */}
+                               <div className='view_work'></div>
+                            <div className='hire_me'></div> 
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div className='rightbox'>
                         <img src={homeimg} alt="" className='img' />
                     </div>
                 </div>
             </div>
-            {/* {isLoginVigible && <Login
-            onLoginClick ={onLoginClick}
-            />} */}
         </>
     )
 }
