@@ -4,29 +4,28 @@ import homeimg from './../../assets/home.jpg'
 import { Login } from '../login/login'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-export default function CenterBox({onLoginClick}) {
+export default function CenterBox({ onLoginClick }) {
     // const [isLoginVigible, setIsLoginVisible] = useState(false)
-    const isLoginVigible = useSelector((state)=>state.account.loginStatus)
+    const isLoginVigible = useSelector((state) => state.account.loginStatus)
+
     return (
         <>
-            <div className='main-page-box'>
+            <div className='main-page-box' style={{filter: isLoginVigible && "blur(20px)"}} >
                 <div className='centerBox2'>
-                   <div className='main-leftbox'> 
-                      <div className='leftbox'>
+                    <div className='main-leftbox'>
+                        <div className='leftbox'>
                             <div className='textbox'>
                                 <span className='textbox1'>hello!</span>
                                 <span className='textbox2'>I Am Parvez Alam</span>
                                 <span className='textbox3'>hi, i am full stack web developor fresher, i am know frotend and backend very well, i am using react.js for frotend and node.js for backend base on javacript.</span>
                             </div>
                             <div className='buttonbox'>
-                                <div className='link-button'>
-                                <Link to={"/myworks"}>View Work</Link>
-                                </div>
+                                <Link to={"/myworks"} className='link-button' >View Work</Link>
                                 <button className='link-button'>hire me</button>
-                               <div className='view_work'></div>
-                            <div className='hire_me'></div> 
+                                <div className='view_work'></div>
+                                <div className='hire_me'></div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <div className='rightbox'>
                         <img src={homeimg} alt="" className='img' />

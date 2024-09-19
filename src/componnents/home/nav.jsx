@@ -11,7 +11,7 @@ export function Nav({onLoginClick}) {
     return (
         <>
             <div className='navi'>
-                <div className='navi-name'><span>Parvez Alam</span></div>
+                <Link to={"/"} className='navi-name'><span>Parvez Alam</span></Link>
                 <div className='navi-end'>
                     <ul className='navi-option'>
                         <li>home</li>

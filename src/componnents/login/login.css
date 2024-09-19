@@ -11,18 +11,29 @@
 .login-box {
     display: flex;
     /* flex-wrap: wrap; */
-    flex: 0 2 939px;
+    flex: 0 2 792px;
     margin-inline: 2vw;
     position: relative;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    height: 682px;
+    height: 581px;
     box-shadow: -1px 1px 19px 12px rgba(191, 191, 191, 0.25);
     background: #373737;
     border-radius: 33px;
 }
 
+
+@media screen and (max-width: 900px) {
+    .inleftbox {
+      display: none;
+    }
+
+    .login-box {
+        flex: 0 2 316px;
+        height: auto;
+    }
+  }
 
 .inleftbox {
     width: 83%;
@@ -48,8 +59,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 464px;
-    gap: 52px;
+    height: 66%;
+    gap: 4vw;
     /* background-color: red; */
 }
 
@@ -98,7 +109,7 @@ p {
     font-size: 13px;
     border: groove;
     border-color: #c0c0f2;
-    height: 60px;
+    height: 26%;
 }
 
 .login-with-google button {

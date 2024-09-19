@@ -20,7 +20,7 @@ export function Login() {
             <div className='login-box'>
                 <Link to={"/"}
                     className='login-cencel'
-                //  onClick={() => dispatch(loginFunc(false))}
+                    onClick={() => dispatch(loginFunc(false))}
                 >
                     X
                 </Link>

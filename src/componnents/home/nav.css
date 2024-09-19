@@ -15,6 +15,7 @@
 .navi-name {
     display: flex;
     flex: 1;
+    text-decoration:none;
 }
 
 .navi-name span {
@@ -37,22 +38,38 @@
     display: flex;
     align-items: center;
     gap:10px;
-    /* justify-content: space-between; */
-    /* flex-grow: inherit; */
-    /* margin-inline: 4px; */
-    /* width: 552px; */
     height: 45px;
     padding: 20px;
     flex: 0 1 650px;
 }
 
 .navi-option li {
-    font-family: var(--font-family);
-    font-weight: 600;
     font-size: 2vw;
     color: #fff;
     flex:1 1 100px;
+    list-style: none;
 }
+
+@media screen and (max-width: 769px) {
+    .navi-option {
+        display: flex;
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        top: 30px;
+        background-color: red;
+        height: auto;
+        gap: 0px; 
+        padding: 7px;
+        align-items: start;
+    }
+    .navi-option li {
+        list-style: none;
+        flex: 0;
+        font-size: 26px;
+    }
+
+    }
 
 .navi-login {
     font-family: var(--font-family);
@@ -60,6 +77,7 @@
     font-size: 30px;
     color: #3cce4a;
     margin-left: 20px;
+    text-decoration:none;
 }
 
 .navi-login :hover {
