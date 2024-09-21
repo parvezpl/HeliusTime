@@ -7,8 +7,10 @@ import { Provider } from 'react-redux'
 import store from './reduxx/store.js'
 import CenterBox from './componnents/home/center_box.jsx'
 import { Login } from './componnents/login/login.jsx'
-import { Workscomp } from './componnents/pages/worksComp/workscomp.jsx';
 import { Sidebar } from './componnents/sidebar/sidebar.jsx'
+import { Workscomp } from './componnents/pages/worksComp/Workscomp.jsx'
+import { Tigrim } from './componnents/game/tigrim/tigrim.jsx'
+import { Website } from './componnents/pages/worksComp/website/website.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route >
@@ -19,10 +21,14 @@ const router = createBrowserRouter(
             <Outlet />
           </>
         }>
-          <Route path='login' element={<Login />}>
-          </Route>
+          <Route path='login' element={<Login />}/>
+          
         </Route>
-        <Route path='myworks' element={<Workscomp/>} />
+        <Route path='myworks' element={<Workscomp/>}>
+          <Route path='game' element={<div>game</div>}/>
+          <Route path='tigrim' element={<Tigrim />}/>
+          <Route path='website' element={<Website />}/>
+        </Route>
       </Route>
     </Route> 
   )
