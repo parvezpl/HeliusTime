@@ -8,7 +8,7 @@ import store from './reduxx/store.js'
 import CenterBox from './componnents/home/center_box.jsx'
 import { Login } from './componnents/login/login.jsx'
 import { Sidebar } from './componnents/sidebar/sidebar.jsx'
-import { Workscomp } from './componnents/pages/worksComp/Workscomp.jsx'
+import { Workscomp } from './componnents/pages/worksComp/workscomp.jsx'
 import { Tigrim } from './componnents/game/tigrim/tigrim.jsx'
 import { Website } from './componnents/pages/worksComp/website/website.jsx'
 const router = createBrowserRouter(
