@@ -11,17 +11,22 @@
     width: 100%;
     height: auto;
     background-color: rgb(72, 71, 72);
-    font-size: 27px;
+    font-size: 17px;
     gap: 25px;
 }
 
+.work-nav div {
+    padding: 8px;
+}
+
 .work-nav-child {
-    /* background-color: green; */
     text-decoration: none;
     color:white;
-    padding-inline: 13px;
-    border-right-style: outset;
+    padding: 13px;
 }
+
+
+
 
 .work-nav-child:hover  {
     /* background-color: green; */

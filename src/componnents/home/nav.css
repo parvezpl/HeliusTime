@@ -1,3 +1,12 @@
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 .navi {
     display: flex;
     position: relative;
@@ -19,12 +28,8 @@
 }
 
 .navi-name span {
-    flex: 1;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 3vw;
+    font-size: 31px;
     color: #3cce4a;
-    text-shadow: 6px 7px 6px 0 rgba(169, 169, 169, 0.25);
 }
 
 .navi-end {
@@ -37,17 +42,18 @@
 .navi-option {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     height: 0px;
-    padding: 20px;
-    flex: 0 1 650px;
 }
 
+
+
 .navi-option li {
-    font-size: 2vw;
+    font-size: 23px;
     color: #fff;
-    flex:1 1 100px;
+    flex: 0 1 59px;
     list-style: none;
+    padding: 1px 6px 1px 6px;
 }
 
 @media screen and (max-width: 769px) {
@@ -67,17 +73,16 @@
         list-style: none;
         flex: 0;
         font-size: 26px;
+        
     }
 
     }
 
 .navi-login {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 30px;
+    font-size: 29px;
     color: #3cce4a;
     margin-left: 20px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .navi-login :hover {
