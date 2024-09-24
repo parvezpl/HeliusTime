@@ -14,11 +14,11 @@ export function Nav({onLoginClick}) {
                 <Link to={"/"} className='navi-name'><span>Parvez Alam</span></Link>
                 <div className='navi-end'>
                     <ul className='navi-option'>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>service</li>
-                        <li>blog</li>
-                        <li>contact</li>
+                        <Link className='navi-option-link' to={'/'}>home</Link>
+                        <Link className='navi-option-link'>about</Link>
+                        <Link className='navi-option-link'>service</Link>
+                        <Link className='navi-option-link'>blog</Link>
+                        <Link className='navi-option-link'>contact</Link>
                     </ul>
                     <Link to={"/login"}
                     className='navi-login'

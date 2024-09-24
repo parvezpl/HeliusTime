@@ -8,11 +8,6 @@ import store from './reduxx/store.js'
 import CenterBox from './componnents/home/center_box.jsx'
 import { Login } from './componnents/login/login.jsx'
 import { Sidebar } from './componnents/sidebar/sidebar.jsx'
-<<<<<<< HEAD
-
-=======
-import { Workscomp } from './componnents/pages/worksComp/workscomp.jsx'
->>>>>>> 19452fdd79b82e86b9fc4d5a23d318fcf4e66074
 import { Tigrim } from './componnents/game/tigrim/tigrim.jsx'
 import { Website } from './componnents/pages/worksComp/website/website.jsx'
 import { Workscomp } from './componnents/pages/worksComp/Workscomp.jsx'

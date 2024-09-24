@@ -23,12 +23,12 @@ p {
 
 .navi-name {
     display: flex;
-    flex: 1;
+    flex: 3;
     text-decoration:none;
 }
 
 .navi-name span {
-    font-size: 31px;
+    font-size: 21px;
     color: #3cce4a;
 }
 
@@ -48,38 +48,39 @@ p {
 
 
 
-.navi-option li {
-    font-size: 23px;
+.navi-option-link {
     color: #fff;
     flex: 0 1 59px;
     list-style: none;
     padding: 1px 6px 1px 6px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 769px) {
     .navi-option {
         display: flex;
-        position: absolute;
+        position: fixed;
         left: 0;
         flex-direction: column;
-        top: 30px;
-        background-color: red;
+        top: 59px;
+        background-color: #4e4848;
         height: auto;
         gap: 0px; 
         padding: 7px;
         align-items: start;
+        border-radius: 3px
     }
     .navi-option li {
         list-style: none;
         flex: 0;
-        font-size: 26px;
+        padding: 3px;
+        
         
     }
 
     }
 
 .navi-login {
-    font-size: 29px;
     color: #3cce4a;
     margin-left: 20px;
     text-decoration: none;
@@ -93,7 +94,5 @@ p {
 /* ============================center box=====================================*/
 
 .center {
-    /* width: 1440px;
-height: 916px; */
     background-color: red;
 }

@@ -4,15 +4,14 @@ import { Link, Outlet } from 'react-router-dom'
 
 export function Workscomp(props) {
     const worknav = [{
-        name: "game",
-        // styles: { "text-decoration": "none" },
-        className: "work-nav-child",
-        to: "game"
-    },
-    {
-        name: "website link",
+      name: "website link",
         className: "work-nav-child",
         to:"website"
+    },
+    {
+        name: "game",
+        className: "work-nav-child",
+        to: "game"
     },
     {
         name: "other work",

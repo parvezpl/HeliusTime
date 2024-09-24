@@ -17,6 +17,9 @@
 
 .work-nav div {
     padding: 8px;
+    white-space: nowrap;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 .work-nav-child {
