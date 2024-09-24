@@ -4,9 +4,9 @@ import { Link, Outlet } from 'react-router-dom'
 
 export function Workscomp(props) {
     const worknav = [{
-      name: "website link",
+        name: "website link",
         className: "work-nav-child",
-        to:"website"
+        to: "website"
     },
     {
         name: "game",
@@ -19,9 +19,9 @@ export function Workscomp(props) {
     },
 
     {
-        name:"tigrim",
+        name: "tigrim",
         className: "work-nav-child",
-        to:"tigrim"
+        to: "tigrim"
     }
     ]
 
@@ -50,7 +50,7 @@ export function Workscomp(props) {
                     </div>
                 </nav>
             </div>
-                <Outlet />
+            <Outlet />
         </>
     )
 }
